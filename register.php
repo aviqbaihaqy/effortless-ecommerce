@@ -3,6 +3,8 @@ require('./includes/config.inc.php');
 $page_title = 'Register';
 include('./includes/header.php');
 require(MYSQL);
+
+// creaating form halaman 83
 require('./includes/form_functions.inc.php');
 
 
@@ -92,6 +94,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     to begin the registration process. <strong>Note: All fields are required.</strong> After completing this form,
     you'll be presented with the opportunity to securely pay for your yearly subscription via <a href="http://www. paypal.com">PayPal</a>.</p>
 
+<!-- creating form halaman 83 -->
 <form action="register.php" method="post" accept-charset="utf-8" style="padding-left:100px">
     <p><label for="first_name"><strong>First Name</strong></label> <br />
         <?php create_form_input('first_name', 'text', $reg_errors); ?>

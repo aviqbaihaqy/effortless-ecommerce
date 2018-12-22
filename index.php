@@ -5,8 +5,8 @@ require(MYSQL);
 require('./includes/form_functions.inc.php');
 
 //untuk testing user
-// $_SESSION['user_id'] = 0;
-// $_SESSION['user_type'] = 'admin';
+$_SESSION['user_id'] = 1;
+$_SESSION['user_type'] = 'admin';
 
 // session_destroy();
 
